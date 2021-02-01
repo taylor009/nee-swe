@@ -13,11 +13,12 @@ A simple Flask-Kubernetes-Docker web application that allows the user to upload 
 Build, push, and deploy a docker container on Kubernetes Engine that performs the above validations for an uploaded .csv file.
 
 The submission should include:
+
 * A public link to the flask web application
 * Entire codebase along with Dockerfile
 * README explaining the solution and all the commands used for docker build, push, and Kubernetes deployment
 
 # Tips
 * In addition to docker, kubernetes engine, and Flask; you are free use to any additional language/tool/services.
-* You may use the the promotional Google Cloud Platform credits for access to Kubernetes and other services you may need to complete this application. Choice of cloud platform is entirely yours.
+* You may use the the promotional Google Cloud Platform credits for access to Kubernetes and other services you may need to compile this application. Choice of cloud platform is entirely yours.
 * Use best practices.
