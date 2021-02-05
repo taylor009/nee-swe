@@ -21,4 +21,5 @@ The submission should include:
 # Tips
 * In addition to docker, kubernetes engine, and Flask; you are free use to any additional language/tool/services.
 * You may use the the promotional Google Cloud Platform credits for access to Kubernetes and other services you may need to compile this application. Choice of cloud platform is entirely yours.
+* If you do not have promotional credits, you may create a new Google/Gmail account for $300 promotional credits. Let me know if you face any issues in this regard.
 * Use best practices.
