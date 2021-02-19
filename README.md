@@ -2,6 +2,46 @@
 
 This repository includes instructions for the eIQ Mobility take home assignment.
 
+
+# Solution Explanation
+
+URL to demo:
+http://35.223.225.205/
+
+API:
+    All api code is inside the api directory.
+<br>
+API directory has its own Dockerfile to build the python container.
+
+ENDPOINT:
+* There is only one endpoint that is a post on '/upload'
+ 
+* /upload expects a csv file, and it will save the file to the csv directory in the api directory.
+
+
+Client: 
+* Very Simple React app with file upload, and a submit button.
+* User alert on success and failure of posting a file to the server.
+* Client directory contains Dockerfile to build react container. 
+
+Docker-Commands:
+
+1. Building the individual containers:
+
+    API: `docker build -t api -f ./api/Dockerfile .`
+    
+    Client: `docker build -t client -f ./client/Dockerfile .`
+
+    Docker-Compose: `docker-compose up`
+
+Kubernetes:
+
+* There is a api-pod yaml file but project is running of GKS.
+* Deployment to GKS was done using Gcloud web-app GKS cluster creation. By selecting the Docker file from github.
+
+
+
+
 # SWE Take-Home Assignment
 
 A simple Flask-Kubernetes-Docker web application that allows the user to upload a .CSV file. On successful file upload, the application should perform the following validations:
