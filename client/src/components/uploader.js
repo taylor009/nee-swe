@@ -1,9 +1,8 @@
 import React from 'react';
 
 class Uploader extends React.Component {
-      constructor(props) {
+    constructor(props) {
     super(props);
-
 
     this.handleUpload = this.handleUpload.bind(this);
   }
@@ -14,7 +13,7 @@ class Uploader extends React.Component {
     const data = new FormData();
     data.append('file', this.uploadInput.files[0]);
 
-    fetch('http://localhost:5000/upload', {
+    fetch('http://34.72.94.167:80/upload', {
       method: 'POST',
       body: data,
     }).then((response) => {
